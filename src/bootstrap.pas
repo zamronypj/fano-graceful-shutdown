@@ -15,7 +15,8 @@ uses
 
 type
 
-    TBootstrapApp = class(TSimpleFastCGIWebApplication)
+//    TBootstrapApp = class(TSimpleFastCGIWebApplication)
+    TBootstrapApp = class(TSimpleUnixFastCGIWebApplication)
     protected
         procedure buildDependencies(const container : IDependencyContainer); override;
         procedure buildRoutes(const container : IDependencyContainer); override;
@@ -29,7 +30,9 @@ uses
     (*! -------------------------------
      *   controllers factory
      *----------------------------------- *)
-    {---- put your controller factory here ---};
+    {---- put your controller factory here ---},
+    HomeControllerFactory,
+    HomeViewFactory;
 
 
     procedure TBootstrapApp.buildDependencies(const container : IDependencyContainer);

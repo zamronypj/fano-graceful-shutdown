@@ -24,7 +24,7 @@
 
  {-----------------------------------------------
    setup application request dispatcher
-   replace with TDispatcherFactory if middleware support is requred
+   replace with TDispatcherDispatcherFactory if middleware support is requred
  ------------------------------------------------}
  container.add(
      'dispatcher',
