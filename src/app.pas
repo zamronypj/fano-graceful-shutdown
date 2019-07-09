@@ -27,5 +27,4 @@ begin
 //    appInstance := TBootstrapApp.create('127.0.0.1', 20477);
     appInstance := TBootstrapApp.create('/tmp/fano-fcgi-graceful.sock');
     appInstance.run();
-    writeln('shutdown');
 end.
